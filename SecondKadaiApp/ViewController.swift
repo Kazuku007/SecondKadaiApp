@@ -13,7 +13,13 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
-
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let resultViewController:ResultViewController = segue.destination as! ResultViewController
+        
+        resultViewController.x = "三木一樹"
+    }
+    @IBAction func goback(_ segue: UIStoryboardSegue) {
+       }
 
 }
 
