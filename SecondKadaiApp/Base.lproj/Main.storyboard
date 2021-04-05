@@ -23,14 +23,17 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E5c-wC-xiz">
-                                <rect key="frame" x="184" y="265" width="46" height="30"/>
+                                <rect key="frame" x="184" y="399" width="46" height="30"/>
                                 <state key="normal" title="Button"/>
                                 <connections>
-                                    <segue destination="Lrh-hp-9Zr" kind="show" id="1qF-rO-4MO"/>
+                                    <segue destination="Lrh-hp-9Zr" kind="show" id="9K4-nr-587"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NtH-wu-1Rv">
-                                <rect key="frame" x="191" y="395" width="32" height="34"/>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="t7R-wZ-eVN">
+                                <rect key="frame" x="157" y="265" width="100" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="Zhl-Gw-x9W"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
@@ -38,14 +41,17 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="E5c-wC-xiz" firstAttribute="top" secondItem="MfC-ml-BPD" secondAttribute="bottom" constant="100" id="M9H-kY-9LC"/>
-                            <constraint firstItem="NtH-wu-1Rv" firstAttribute="top" secondItem="E5c-wC-xiz" secondAttribute="bottom" constant="100" id="kWa-DA-Qpj"/>
-                            <constraint firstItem="MfC-ml-BPD" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="100" id="ljT-BZ-UZN"/>
-                            <constraint firstItem="NtH-wu-1Rv" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="m3n-uI-XzE"/>
-                            <constraint firstItem="MfC-ml-BPD" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="mHF-tM-uV1"/>
-                            <constraint firstItem="E5c-wC-xiz" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="qrk-QZ-MGn"/>
+                            <constraint firstItem="t7R-wZ-eVN" firstAttribute="top" secondItem="MfC-ml-BPD" secondAttribute="bottom" constant="100" id="EXr-tU-Xo9"/>
+                            <constraint firstItem="MfC-ml-BPD" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="YYG-8q-J3z"/>
+                            <constraint firstItem="MfC-ml-BPD" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="100" id="Yrh-rh-fFd"/>
+                            <constraint firstItem="E5c-wC-xiz" firstAttribute="top" secondItem="t7R-wZ-eVN" secondAttribute="bottom" constant="100" id="dEZ-3o-paQ"/>
+                            <constraint firstItem="E5c-wC-xiz" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="frh-tB-zD0"/>
+                            <constraint firstItem="t7R-wZ-eVN" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="oSn-LK-8Mt"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="UItextfield" destination="t7R-wZ-eVN" id="89A-lh-43n"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -63,7 +69,7 @@
                                 <rect key="frame" x="191.5" y="221" width="31" height="30"/>
                                 <state key="normal" title="戻る"/>
                                 <connections>
-                                    <segue destination="pFd-xZ-kz2" kind="unwind" unwindAction="goback:" id="0QT-4S-8Ho"/>
+                                    <segue destination="pFd-xZ-kz2" kind="unwind" unwindAction="goback:" id="fHE-6Q-Pbf"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h91-WI-MRf">

@@ -11,6 +11,7 @@ class ResultViewController: UIViewController {
     @IBOutlet weak var helloname: UILabel!
     var x:String = ""
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         

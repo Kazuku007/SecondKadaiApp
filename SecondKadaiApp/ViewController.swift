@@ -15,11 +15,15 @@ class ViewController: UIViewController {
     }
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let resultViewController:ResultViewController = segue.destination as! ResultViewController
-        
-        resultViewController.x = "三木一樹"
+        resultViewController.x = UItextfield.text!
     }
+    
+    @IBOutlet weak var UItextfield: UITextField!
     @IBAction func goback(_ segue: UIStoryboardSegue) {
-       }
-
+           }
+    
 }
+
+
+
 
